@@ -34,14 +34,13 @@ sender = 'yuess011@163.com'
 receiver = ['yuess011@163.com']
 subject = 'Python email test'
 mailbody = "Hi!\nHow are you?\nHere is the link you wanted:\nhttp://www.testfan.cn"
-# attachfile = "smail.py"
 attachfile = filename
 # 只需要改这些即可，结束
 
 
 msg = MIMEMultipart('mixed')
 msg['Subject'] = subject
-msg['From'] = 'yuess <yuess@163.com>'
+msg['From'] = 'yuess <yuess011@163.com>'
 # 收件人为多个收件人,通过join将列表转换为以;为间隔的字符串
 msg['To'] = ";".join(receiver)
 
@@ -70,4 +69,3 @@ smtp.connect(smtpserver)
 smtp.login(username, password)
 smtp.sendmail(sender, receiver, msg.as_string())
 smtp.quit()
-
