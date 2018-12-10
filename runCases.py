@@ -26,12 +26,12 @@ runner.run(mysuite)
 ######
 
 # 只需要改这些即可，开始
-smtpserver = 'smtp.163.com'
-username = 'yuess011@163.com'
-password = 'yue123'     # 设置客户端授权码 的 密码
-sender = 'yuess011@163.com'
+smtpserver = 'smtp.qq.com'     #smtp.qq.com
+username = '1650051877@qq.com'   #qq 邮箱
+password = 'ebhkdilqdkfkdccg'     # 设置客户端授权码 的 密码   smtp
+sender = '1650051877@qq.com'
 # 收件人为多个收件人
-receiver = ['yuess011@163.com']
+receiver = ['1650051877@qq.com']
 subject = 'Python email test'
 mailbody = "Hi!\nHow are you?\nHere is the link you wanted:\nhttp://www.testfan.cn"
 attachfile = filename
